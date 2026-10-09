@@ -4,19 +4,19 @@ FLAGGED = ["Espresso", "Flowers"]
 
 
 def add_song(playlist, song):
-    playlist = playlist.append(song)
+    playlist.append(song)
     return playlist
 
 
 def remove_flagged(playlist):
-    for song in playlist:
+    for song in playlist.copy():
         if song in FLAGGED:
             playlist.remove(song)
     return playlist
 
 
 def make_backup(playlist):
-    backup = playlist
+    backup = playlist.copy()
     return backup
 
 

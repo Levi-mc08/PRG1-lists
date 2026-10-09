@@ -6,12 +6,12 @@ print(playlist)
 
 print("---")
 
-alphabetical = sorted(playlist)
+alphabetical = sorted(playlist, reverse = True)
 print(alphabetical)
 print(playlist)
 
 print("---")
 
-result = playlist.sort()
+result = sorted(playlist)
 print(result)
 print(playlist)
